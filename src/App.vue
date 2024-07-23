@@ -1,11 +1,15 @@
 <template>
- <h1>webbie</h1>
+ <FooterBar />
 </template>
 
 <script>
-
+import FooterBar from './components/Footer.vue';
 export default {
+
   name: 'App',
+  components:{
+    FooterBar ,
+  }
 
 }
 </script>
