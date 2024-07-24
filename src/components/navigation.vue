@@ -41,5 +41,9 @@ export default {
 </script>
 
 <style scoped>
+nav{
+
+  border-bottom:2px solid green;
+}
 
 </style>

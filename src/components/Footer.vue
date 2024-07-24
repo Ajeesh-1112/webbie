@@ -1,29 +1,30 @@
 <template>
+      <div id="support-us">
+        <div>
+            <p>@WEBBIE!</p>
+        </div>
+        <div>
+            <span>follow us</span>
+            <img src="@/assets/github.png" alt="">
+            <img src="@/assets/fblogo.png" alt="">
+            <img src="@/assets/linkedin.webp" alt="" id="last">
+        </div>
+
+        </div>
     <div class="footer">
         <div id="services">
             <div>
             <h3>Services</h3>
-            <a href="">website Design</a>
-            <a href="">Ecommerece Website</a>
-            <a href="">Portfolio Website</a>
+            <p>website Design</p>
+            <p>Ecommerece Website</p>
+            <p>Portfolio Website</p>
             </div>
-           
-            <div id="support-us">
-            <img src="@/assets/github.png" alt="">
-            <img src="@/assets/fblogo.png" alt="">
-            <img src="@/assets/linkedin.webp" alt="" id="last">
-         
-
-        </div>
-   
-
-        
         </div>
         <div id="contact-us">
             <div>
             <h3>Contact Us</h3>
             <p>Email:</p>  <a href="mailto:smajeesh3@gmail.com">smajeesh3@gmail.com</a>
-            <p>Contact Us:<a href="">877876575334</a></p>
+            <p>Phone Number:</p><a href="">877876575334</a>
             </div>
 
 
@@ -34,13 +35,18 @@
                 <input type="text" placeholder="Name">
                 <input type="email" placeholder="Email">
                 <input type="email" placeholder="Contact Number">
-                <textarea name="" id="" cols="60" rows="5" placeholder="Feedback"></textarea>
-                <input type="submit" name="" id="">
+                <textarea name="" id="" cols="50" rows="3" placeholder="Feedback"></textarea>
+                <input type="submit" name="" id="" value="SUBMIT">
 
             </form>
         </div>
        
     </div>
+    <div id="copy-rights">
+        <p>copyrights@2024</p>
+
+    </div>
+  
     
     
     
@@ -54,21 +60,26 @@ export default {
 </script>
 
 
-<style>
+<style scoped>
 *
 {
-    margin: 0px;
+    margin:0px;
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     text-transform: capitalize;
     
 }
 .footer
 {
+    background-color: rgb(232, 232, 232);
+    /* border-top: 2px solid green; */
     color:green;
     display: flex;
     justify-content: space-between;
-    background-color: rgb(10, 10, 10);
-    padding: 20px 0px 0px 50px;
+    background-color:white;
+    flex-wrap: wrap;
+    padding: 20px 40px 0px 50px;
+    /* background-color: rgb(232, 232, 232); */
+  
    
 }
 
@@ -78,42 +89,62 @@ export default {
     font-size: 1.6em;
 }
 
- a{
+ a,p{
     display: block;
     text-decoration: none;
-    color:rgb(184, 183, 183);
+    color:black;
     margin: 20px 0px;
     
 }
-#services a{
+#services p{
     margin: 40px 0px;
 }
-#services
+#services,#contact-us
 {
     flex:1;
     align-self: center;
-    display:flex;
-    flex-direction: column;
-    justify-content:space-between;
+ 
 }
-#contact-us
+#copy-rights
 {
-    flex:1;
-    padding:20px;
+    text-align: center;
+    background-color: rgb(232, 232, 232);
+    padding: 1px 0px;
+ 
+
 }
+#support-us
+{
+    width:100%;
+   
+    display: flex;
+    justify-content: space-between;
+    background-color: rgb(232, 232, 232);
+ 
+  
+}
+#support-us p {
+    color: green;
+    font-size: 1.2em;
+    margin-left: 18px;
+
+}
+#support-us div{
+    
+    align-self:center;
+}
+
 #feedback
 {
     flex:1.3;
-    justify-self: center;
-    align-self: center;
-  
+    
 }
 
-a:hover{
+a,#services p:hover{
     color:green;
     width:fit-content;
     border-bottom: 2px solid green;
-    transition: .5s;
+   
 }
 
 #support-us img{
@@ -121,40 +152,46 @@ a:hover{
     width:40px;
     margin-left: 15px;
 }
-input{
+input,textarea{
     display: block;
-    width: 70%;
+    width: 80%;
     border: none;
     outline: none;
     border-bottom: 2px solid green;
-    background-color: black;
-    color: white;
+    color:black;
     padding: 10px 0px;
-    margin-bottom: 18px;
+    margin-bottom: 10px ;
+}
+span{
+    color: green;
 }
 textarea
 {
+   
     border: 2px solid green;
-    background-color: black;
+    resize: none;
+    padding: 10px;
+    
 }
 input[type="submit"]
 {
-    margin: 10px 0px;
+    margin: 10px 0px 10px;
     border:2px solid green;
     background-color: rgb(5, 92, 5);
     letter-spacing: 2px;
+    color: white;
 }
 @media (max-width: 768px) {
   .footer {
     flex-direction: column;
   }
   #services, #support-us, #contact-us, #feedback {
-    margin-bottom: 20px;
+    margin-bottom: 20px; 
     align-self: center;
   }
   input, textarea {
     width: 100%;
   }
-}
+ } 
 
 </style>
