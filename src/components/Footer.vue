@@ -1,16 +1,5 @@
 <template>
-      <div id="support-us">
-        <div>
-            <p>@WEBBIE!</p>
-        </div>
-        <div>
-            <span>follow us</span>
-            <img src="@/assets/github.png" alt="">
-            <img src="@/assets/fblogo.png" alt="">
-            <img src="@/assets/linkedin.webp" alt="" id="last">
-        </div>
-
-        </div>
+    
     <div class="footer">
         <div id="services">
             <div>
@@ -24,6 +13,7 @@
             <div>
             <h3>Contact Us</h3>
             <p>Email:</p>  <a href="mailto:smajeesh3@gmail.com">smajeesh3@gmail.com</a>
+            <a href="mailto:smajeesh3@gmail.com">ranjitpr3@gmail.com</a>
             <p>Phone Number:</p><a href="">877876575334</a>
             </div>
 
@@ -42,8 +32,23 @@
         </div>
        
     </div>
-    <div id="copy-rights">
-        <p>copyrights@2024</p>
+    <div id="support-us">
+
+
+        
+        <div>
+            <p>@WEBBIE!</p>
+        </div>
+        <div>
+            <p>copyrights@2024</p>
+        </div>
+        <div>
+            <span>follow us</span>
+            <img src="@/assets/github.png" alt="">
+            <img src="@/assets/fblogo.png" alt="">
+            <img src="@/assets/linkedin.webp" alt="" id="last">
+        </div>
+        
 
     </div>
   
@@ -70,8 +75,9 @@ export default {
 }
 .footer
 {
+    
     background-color: rgb(232, 232, 232);
-    /* border-top: 2px solid green; */
+    border-top: 2px solid green;
     color:green;
     display: flex;
     justify-content: space-between;
@@ -116,7 +122,7 @@ export default {
 #support-us
 {
     width:100%;
-   
+   margin-top: 20px;
     display: flex;
     justify-content: space-between;
     background-color: rgb(232, 232, 232);
@@ -193,5 +199,23 @@ input[type="submit"]
     width: 100%;
   }
  } 
+  input[type="submit"]:hover{
+   
+    border: 2px solid green; 
+    color:green;
+    animation: border-anim 0.7s forwards;
+    
+    
+}
+@keyframes border-anim {
+    from {
+        border-color: transparent;
+        background-color: green;
+    }
+    to {
+        background-color: white;
+        border-color: green;
+    }
+}
 
 </style>

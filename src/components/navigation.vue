@@ -26,7 +26,7 @@
         </li>
       </ul>  
       <form class="d-flex" role="search">
-        <button class="btn ms-5" style="background-color:green" type="button">Login</button>
+        <button class="btn ms-5" style="background-color:green;color: white;" type="button">Login</button>
       </form>
     </div>
   </div>

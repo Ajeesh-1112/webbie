@@ -4,7 +4,7 @@
              <p>
                  <span id="for-c">C</span>reate a  engaging <span>websites</span><br>
                  using <span>vue,react </span> <br>and so on,<br>
-                 that can run on any device.
+                 that can <span>  run on any device</span>.
              </p>
              <button>CONTACT US</button>
        </div>
@@ -37,7 +37,7 @@ export default{
 }
 #stater
 {
-    margin-top:80px;
+    margin-top:150px;
     display: flex;
     justify-content: space-evenly;
   
@@ -52,7 +52,7 @@ export default{
 #stater button{
     background-color: green;
     color: white;
-    border: none;
+    border:2px solid green ;
     width: 40%;
     margin-top:50px;
     padding: 10px ;
@@ -60,20 +60,44 @@ letter-spacing: 2px;
 }
 #stater span{
     color: green;
+    font-weight: 650;
 
 }
-@media (max-width: 768px) {
+#stater button:hover{
+    background-color: white;
+    /* /* transition: .4s; */
+    border: 2px solid green; 
+    color:green;
+    animation: border-anim 0.4s forwards;
+    
+    
+}
+@keyframes border-anim {
+    from {
+        border-color: transparent;
+    }
+    to {
+        border-color: green;
+    }
+}
+@media (max-width: 1000px) {
     #stater
     {
+        height: 100vh;
+        margin:0px 0px 0px ;
         flex-direction: column;
         background:url("@/assets/website-media.jpg");
         background-repeat: no-repeat;
+        background-size: cover;
+        color:black
+        
     }
+    
   
     #stater-content
     {
         align-self: center;
-        /* justify-self: center; */
+    
         
     }
     #stater-img
